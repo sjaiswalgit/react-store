@@ -1,0 +1,74 @@
+.cardContainer{
+    padding: 4rem 1rem 2rem 0;
+    display: flex;
+   flex-wrap: wrap;
+   gap:2rem;
+
+}
+.card{
+    width:26rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1rem;
+    margin-bottom: 4rem;
+}
+.cardimgbox{
+    position: relative;
+    background-color: white;
+    width: 100%;
+    cursor: pointer;
+}
+.cardimgbox::after{
+    content:"Detail view";
+    position:absolute;
+    bottom:0;
+    left:0;
+    width: 100%;
+    height: 0;
+    background-color: rgb(182, 180, 180);
+    font-family: Cormorant;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 3rem;
+    overflow: hidden;
+   
+}
+.cardimgbox:hover::after{
+    height: 3rem;
+}
+.cardImg{
+width: 100%;
+height: 26rem;
+object-fit: contain;
+background-color: white;
+}
+.cardTitle{
+    font-family: Cormorant;
+    margin: 0;
+    font-size: 2rem;
+     font-weight:normal ;
+     max-width: 18rem;
+     white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+     
+}
+.cardprice{
+    margin:0;
+    font-size: 1.3rem;
+}
+.addTocard{
+    margin:0 ;
+    font-size: 1.2rem;
+    background-color: rgb(46, 47, 54);
+    color:white;
+    width: 85%;
+    text-align: center;
+    padding:1rem 0 1rem 0;
+    cursor: pointer;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.addTocard:hover{
+    background-color: rgb(165, 166, 170);;
+}

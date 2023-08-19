@@ -3,24 +3,73 @@
     flex-direction: column;
     font-size: large;
     padding: 2rem 2rem 1rem 2rem;
-    width:15rem;
+   width: 15rem;
+  flex-shrink: 0;
 }
 .filtertitle{
-    border-bottom:1px solid grey;
+    border-bottom:1px solid rgb(180, 178, 178);
     padding-bottom: 2rem;
     margin: 0;
     font-family: "Lucida Handwriting", "Courier New", monospace;
     font-style: italic;
 }
 .filtercat{
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid rgb(180, 178, 178);
     padding:2rem 0 2rem 0;
     font-style: italic;
     font-family:  Cormorant;
     cursor: pointer;
+    font-weight:500;
 } 
 .filtercat span{
 float: right;
 font-style: normal;
 font-size: larger;
 }
+.cartitem{
+font-size: medium;
+display: flex;
+flex-direction: column;
+gap:1rem;
+padding-top: 2rem;
+}
+.notdisplay{
+    display: none;
+}
+input[type='range'] {
+    appearance: none;
+    width: 100%;
+    -webkit-appearance: none;
+    background-color: gray;
+    height: 2px;
+  }
+  
+  
+  input[type='range']::-webkit-slider-thumb {
+    appearance: none;
+    width: 13px;
+    -webkit-appearance: none;
+    height: 13px;
+    border-radius: 50%;
+    cursor: ew-resize;
+    background: #292828;
+  }
+
+/** FF*/
+input[type="range"]::-moz-range-progress {
+    background-color: #2f3131; 
+  }
+  input[type="range"]::-moz-range-track {  
+    background-color: grey;
+  }
+  .sortitem{
+    display: flex;
+    align-items: center;
+    gap:5px;
+    font-size: medium;
+    font-weight: lighter;
+    
+  }
+  .sortitem input{
+    margin: 0;
+  }
