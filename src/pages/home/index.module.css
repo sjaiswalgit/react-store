@@ -1,0 +1,96 @@
+.home{
+    
+}
+.bgpic{
+    height: 90vh;
+    background-color: transparent;
+}
+.categoryContainer{
+    min-height: 100vh;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    padding: 10% 0 5% 0;
+    margin: 0;
+}
+.categoryTitle{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:3%;
+}
+.categoryTitle div{
+    border-top: 1px solid black;
+    height:0;
+    width: 30%;
+}
+.categoryTitle h1{
+    font-family: "Lucida Handwriting", "Courier New", monospace;
+    font-size: xx-large;
+}
+.categoryContainer p{
+    font-size: large;
+    max-width: 25%;
+    text-align: center;
+    font-family: Cormorant;
+    font-weight: 300;
+    font-size: larger;
+}
+.categoryBox{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 8%;
+    margin-bottom: 5%;
+}
+figure{position: relative;
+    z-index: 0;
+cursor: pointer;
+}
+figure::after{
+    content: "Quick View";
+    background-color: rgb(218, 215, 215);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: 1;
+    font-family: Cormorant;
+    font-size: 1.2rem;
+    height: 0;
+    line-height: 2.8rem;
+    overflow: hidden;
+    
+}
+figure:hover::after{
+    height: 2.8rem;
+    transition: 0.4s;
+}
+
+.catImage{
+    height: 13rem;
+    width: 18rem;
+}
+
+figcaption{
+    font-size: large;
+    margin-top: 12px;
+    font-style: italic;
+    font-family: "Lucida Handwriting", "Courier New", monospace;
+}
+.shopbutton{
+    background-color: rgb(56, 54, 54);
+    font-size: large;
+    color:white;
+    padding: 10px 40px 10px 40px;
+    cursor: pointer;
+    user-select: none;
+}
+.shopbutton:hover{
+background-color: rgb(134, 130, 130);
+}

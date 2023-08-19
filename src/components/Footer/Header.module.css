@@ -1,0 +1,80 @@
+.footer{
+    background-color: rgb(230, 230, 230);
+    margin: 0;
+    padding: 2px 0 2px 0;
+}
+.footertop{
+border-bottom: 1px solid black;
+display: flex;
+align-items: center;
+flex-direction: column;
+padding: 5rem 0 5rem 0;
+}
+.footerbottom{
+    margin-top: 4px;
+    border-top: 2px solid black;
+    min-height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: large;
+}
+.footercontain{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    gap: 5rem;
+    min-height: 25rem;
+}
+.footerdetail{
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+}
+.footerdetail h1{
+    font-style: italic;
+    
+}
+.footerdetail p{
+    font-size: large;
+    margin-top:0;
+    user-select: none;
+}
+.footerdetail i{
+font-size: x-large;
+border-bottom: 1px solid black;
+padding: 2rem 0 1rem 0;
+margin-bottom: 2rem;
+}
+.footerdetail a{
+    font-size: large;
+    margin-bottom: 0.8rem;
+    user-select: none;
+}
+.footersubscribe{
+    
+    display:flex;
+    gap:10rem;
+    align-items: center;
+}
+.service div{
+font-size: large;
+padding-top:1rem ;
+}
+.subinp{
+    width:23rem;
+    height: 2.8rem;
+    outline: none;
+    border: 1px solid rgb(0, 0, 0);
+    margin-right: 2rem;
+}
+.subbtn{
+    background-color: rgb(45, 45, 56);
+    padding: 0.8rem 2.1rem 0.8rem 2.1rem;
+    color:white;
+    font-size: large;
+    cursor: pointer;
+}
+.subbtn:hover{
+    background-color:rgb(165, 165, 170); ;
+}

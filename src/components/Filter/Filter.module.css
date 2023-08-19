@@ -1,0 +1,26 @@
+.filter{
+    display:flex;
+    flex-direction: column;
+    font-size: large;
+    padding: 2rem 2rem 1rem 2rem;
+    width:15rem;
+}
+.filtertitle{
+    border-bottom:1px solid grey;
+    padding-bottom: 2rem;
+    margin: 0;
+    font-family: "Lucida Handwriting", "Courier New", monospace;
+    font-style: italic;
+}
+.filtercat{
+    border-bottom: 1px solid grey;
+    padding:2rem 0 2rem 0;
+    font-style: italic;
+    font-family:  Cormorant;
+    cursor: pointer;
+} 
+.filtercat span{
+float: right;
+font-style: normal;
+font-size: larger;
+}
