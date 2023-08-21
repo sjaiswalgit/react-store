@@ -7,7 +7,7 @@ import pic4 from "../../Images/women's clothing.jpeg"
 import Footer from '../../components/Footer/Footer'
 const Home = () => {
   return (
-    <div className={styles.home}>
+    <div className={styles.home} >
         <div className={styles.bgpic}></div>
         <div className={styles.categoryContainer}>
             <div className={styles.categoryTitle}>

@@ -1,18 +1,21 @@
-import React from 'react'
+import React,{useState} from 'react'
 import styles from './Header.module.css'
 import { NavLink, Outlet } from 'react-router-dom'
 import { AccountCircle, Facebook, Instagram, Pinterest, SearchOutlined, ShoppingBasket } from '@mui/icons-material'
+import Auth from '../../pages/Auth/Auth'
 const Header = () => {
+  const [authshow,setAuthshow]=useState(false)
   return (
     <div>
         <div className={styles.potrait}>
+          {authshow&&<Auth />}
             <div className={styles.toppart}>
                 <div className={styles.searchbox}>
                 <SearchOutlined />
                  <input type="text" placeholder='Search...' />
                 </div>
                 <div className={styles.loginbox}>
-                <div className={styles.login}><AccountCircle fontSize='large'/><span>Log In</span></div>
+                <div className={styles.login} onClick={()=>{setAuthshow(true)}}><AccountCircle fontSize='large'/><span>Log In</span></div>
                 <div ><ShoppingBasket fontSize='large'/></div>
                 </div>
             </div>

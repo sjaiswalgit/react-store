@@ -4,6 +4,10 @@
 .bgpic{
     height: 90vh;
     background-color: transparent;
+    background-image: url("E:\Work\React store\app\src\Images\bgImage.png");
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-attachment: fixed;
 }
 .contactContainer{
     min-height: 80vh;

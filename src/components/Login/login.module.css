@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.form_box{
+    background-color: white;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+}
+
+.form_wrapper{
+    background-color: #fff;
+    padding: 10px;
+    /* border: 1px solid #033440; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+}
+.form_title{
+    font-family:Cormorant ;
+}
+.register_form{    
+    display: flex;
+    flex-direction: column ;
+    /* border: 1px solid red; */
+    margin: 10px 0;
+    padding: 10px;    
+}
+
+.text_input{
+    margin: 10px 5px;
+    border: none;
+    border-bottom: 1px solid #d5d5d5;
+    padding:0 5px;
+    height: 25px;
+    outline: none;
+}
+
+.file_input{
+    display:none;
+}
+
+.avatar_box{
+    color:#6e6e6e ;
+    margin: 10px 5px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.button{
+    color: white;
+    letter-spacing: 1px;
+    width: 100%;
+    margin: 0 auto;
+    height: 3rem;
+    padding: 0;
+    border: none;
+    background-color: rgb(34, 35, 39);
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #9a9a9b;
+}
+
+.switch_text{
+    color: rgb(83, 83, 83);
+    font-size: 13px;
+}
+.login_link{
+    font-weight: bold;
+    cursor: pointer;
+}
+.closebutton{
+    width: 100%;
+    text-align: end;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: black;
+}
+.closebutton:hover{
+    color:#6e6e6e
+}

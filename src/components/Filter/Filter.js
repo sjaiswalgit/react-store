@@ -9,7 +9,7 @@ const Filter = () => {
   return (
     <div className={styles.filter}> 
         <div className={styles.filtertitle}>Filter By</div>
-        <div className={styles.filtercat} onClick={()=>{setcategory(!category)}}>Categories<span>{(category)?<>-</>:<>+</>}</span>
+        <div className={styles.filtercat} onClick={()=>{setcategory(true)}}>Categories<span>{(category)?<span onClick={(e)=>{e.stopPropagation();setcategory(false)}}>-</span>:<span>+</span>}</span>
         <div className={(category)?styles.cartitem:styles.notdisplay}>
         <div className={styles.item}>Electronics</div>
         <div className={styles.item}>Electronics</div>
@@ -17,12 +17,12 @@ const Filter = () => {
         <div className={styles.item}>Electronics</div>   
         </div>
         </div>
-        <div className={styles.filtercat} onClick={()=>{setprice(!price)}}>Price<span>{(price)?<>-</>:<>+</>}</span>
+        <div className={styles.filtercat} onClick={()=>{setprice(true)}}>Price<span>{(price)?<span  onClick={(e)=>{e.stopPropagation();setprice(false)}}>-</span>:<span>+</span>}</span>
         <div className={(price)?styles.cartitem:styles.notdisplay}>
         <input type="range" max="700" className={styles.pricerange}/>  
         </div>
         </div>
-        <div className={styles.filtercat} onClick={()=>{setsort(!sort)}}>Sort<span>{(sort)?<>-</>:<>+</>}</span>
+        <div className={styles.filtercat} onClick={()=>{setsort(true)}}>Sort<span>{(sort)?<span onClick={(e)=>{e.stopPropagation();setsort(false)}}>-</span>:<span>+</span>}</span>
         <div className={(sort)?styles.cartitem:styles.notdisplay}>
         <div className={styles.sortitem}>
         <input type="radio" id="price" name="sorting" />
