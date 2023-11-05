@@ -1,8 +1,8 @@
 .footer{
     background-color: rgb(230, 230, 230);
     margin: 0;
-    padding: 2px 0 2px 0;
-    width: 100%;
+    padding: 2px 4px 2px 4px;
+    width: calc(100% - 8px);
 }
 .footertop{
 border-bottom: 1px solid black;
@@ -23,7 +23,7 @@ padding: 5rem 0 5rem 0;
 .footercontain{
     display: flex;
     flex-wrap: wrap;
-    align-items: start;
+    align-items: flex-start;
     gap: 5rem;
     min-height: 25rem;
 }
@@ -53,21 +53,32 @@ margin-bottom: 2rem;
     user-select: none;
 }
 .footersubscribe{
-    
+    width: 70%;
     display:flex;
-    gap:10rem;
-    align-items: center;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   gap:1rem;
+  
 }
 .service div{
 font-size: large;
 padding-top:1rem ;
 }
+.subscribebox{
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    
+}
 .subinp{
-    width:23rem;
+    width: 20rem;
     height: 2.8rem;
     outline: none;
     border: 1px solid rgb(0, 0, 0);
-    margin-right: 2rem;
 }
 .subbtn{
     background-color: rgb(45, 45, 56);
@@ -75,6 +86,7 @@ padding-top:1rem ;
     color:white;
     font-size: large;
     cursor: pointer;
+    height: fit-content;
 }
 .subbtn:hover{
     background-color:rgb(165, 165, 170); ;

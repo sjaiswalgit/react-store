@@ -1,3 +1,4 @@
+
 .potrait{
     border-bottom: 2px solid white;
     color:white;
@@ -18,7 +19,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    flex-direction: row;
     
 }
 .searchbox{
@@ -54,6 +55,24 @@
   gap: 5px;
   cursor: pointer;
 }
+.toggle{
+  display: none;
+}
+.line1{
+  width:1.4rem;
+  height: 0;
+  border-bottom: 2px solid white;
+}
+.line2{
+  width:1.4rem;
+  height: 0;
+  border-bottom: 2px solid white;
+}
+.line3{
+  width:1.4rem;
+  height: 0;
+  border-bottom: 2px solid white;
+}
 .bottom{
   height: 4.8rem;
   border-bottom: 2px solid white;
@@ -64,7 +83,7 @@
 .link{
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   gap:4rem;
   width:45%;
 
@@ -89,6 +108,29 @@
   width:calc(41% - 2px);
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   gap: 2rem;
+}
+@media only screen and (max-width:600px){
+  .bottom{
+    display: none;
+  }
+  .cart{
+    display: none;
+  }
+  .toggle{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+  }
+  .toppart{
+    border-bottom: 1px solid white;
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    height: 3.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    
+}
 }

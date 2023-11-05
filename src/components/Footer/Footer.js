@@ -1,6 +1,8 @@
 import React from 'react'
-import styles from './Header.module.css'
+import styles from './footer.module.css'
 const Footer = () => {
+
+
   return (
     <div className={styles.footer}>
     <div className={styles.footertop}>
@@ -25,8 +27,8 @@ const Footer = () => {
             </div>
         </div>
         <div className={styles.footersubscribe}>
-            <span className={styles.service}><div style={{borderBottom:"1px solid black"}}>Visit our store</div><div>Customer service: 123-456-7890</div></span>
-            <span><input type="text" placeholder='Enter email here*' className={styles.subinp}/><span className={styles.subbtn}>Subscribe Now</span></span>
+            <div className={styles.service}><div style={{borderBottom:"1px solid black"}}>Visit our store</div><div>Customer service: 123-456-7890</div></div>
+            <div className={styles.subscribebox}><input type="text" placeholder='Enter email here*' className={styles.subinp}/><div className={styles.subbtn}>Subscribe Now</div></div>
         </div>
     </div>
     <div className={styles.footerbottom}>

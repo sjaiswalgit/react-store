@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import styles from './Filter.module.css'
+import styles from './filter.module.css'
 const Filter = () => {
     const  [category,setcategory]=useState(false);
     const  [price,setprice]=useState(false);
