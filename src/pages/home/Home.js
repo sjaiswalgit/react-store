@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import styles from './index.module.css'
 import pic1 from '../../Images/electronics.jpeg'
 import pic2 from '../../Images/jewelery.jpeg'
@@ -6,6 +6,7 @@ import pic3 from "../../Images/men's clothing.jpeg"
 import pic4 from "../../Images/women's clothing.jpeg"
 import Footer from '../../components/Footer/Footer'
 const Home = () => {
+  useEffect(()=>{window.scrollTo(0,0)},[])
   return (
     <div className={styles.home} >
         <div className={styles.bgpic}></div>
