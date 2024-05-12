@@ -1,13 +1,17 @@
 .about{
+    width: 100%;
     
 }
 .bgpic{
-    height: 90vh;
+    width: 100%;
+    aspect-ratio: 2/1;
+    max-height: 90vh;
     background-color: transparent;
     background-image: url("E:\Work\React store\app\src\Images\bgImage.png");
     background-repeat: no-repeat;
     background-origin: border-box;
     background-attachment: fixed;
+    background-size: cover;
 }
 .aboutContainer{
     min-height: 80vh;
@@ -36,6 +40,7 @@
 .aboutTitle h1{
     font-family: "Papyrus" ;
     font-size: xx-large;
+    text-align: center;
 }
 .paraCont{
     display: flex;
@@ -44,6 +49,28 @@
 .paraCont p{
     text-align: justify;
     max-width: 30rem;
+    padding: 2rem;
     font-size: large;
     font-family: Cormorant;
+}
+@media only screen and (max-width:600px) {
+    .bgpic{
+        background-color: transparent;
+        background-image: url("E:\Work\React store\app\src\Images\bgImage.png");
+        background-repeat: no-repeat;
+        background-origin: border-box;
+        background-attachment: fixed;
+        background-size: contain;
+    }
+    .paraCont{
+        display: flex;
+        flex-direction: column;
+        gap:4rem;
+    }
+    .aboutTitle h1{
+        font-family: "Papyrus" ;
+        font-size: large;
+        text-align: center;
+    }
+
 }
